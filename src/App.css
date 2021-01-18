@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
+@media only screen and (max-width: 600px) {
+
+  .App {
+    height: 100vh;
+    padding: .5vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.065fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Data"
+      "Search-bar";
+      font-family: Fraunces;
+      background-color: darkgrey;
+  }
+  
+  .Search-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "search-form search-form search-form search-form";
+    grid-area: Search-bar;
+    border-radius: 25px;
+    margin-bottom: 1.5vh;
+  }
+  
+  .search-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "search-bar search-bar search-bar search-button";
+    grid-area: search-form;
+    border-radius: 25px;
+  }
+  
+  .search-bar { 
+    margin-left: 5px;
+    margin-right: 5px;
+    grid-area: search-bar;
+    border-radius: 25px;
+    border: 0;
+    background-color: rgb(247, 244, 244);
+  
+  }
+  
+  .search-button { grid-area: search-button;
+    border-radius: 25px;
+    border: 0;
+    background-color: rgba(6, 36, 206, 0.562);
+    color: whitesmoke;
+  }
+  
+  .Data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 2.0fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "icon info"
+      "name name"
+      "current-temp current-temp"
+      "min-max extra"
+      ;
+    grid-area: Data;
+  }
+  
+  .name { 
+    font-size: 7vh;
+    font-stretch: expanded;
+    margin: auto;    
+    margin-top: 0;
+    grid-area: name; }
+  
+  .min-max {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "max-temp min-temp";
+    grid-area: min-max;
+    font-size: 5vh;
+    font-stretch: extra-condensed;
+  }
+
+  .arrow {
+  border: solid black;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 3px;
+  margin: 5px;
+  width: 1vh;
+  height: 1vh;
+  
+  }
+  .up {
+    border-color: red;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  
+  .down {
+    border-color: blue;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  
+  .max-temp { grid-area: max-temp;
+    margin: auto;
+    
+  }
+  
+  .min-temp { grid-area: min-temp;
+    margin: auto;
+   }
+  
+  .extra {
+    border-left: 4px solid rgba(134, 133, 133, 0.473);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "wind humidity";
+    grid-area: extra;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 3vh;
+    font-stretch: extra-condensed;
+  }
+
+  .wind{
+    margin: 1vh;
+  }
+
+  .humidity{
+    margin: 1vh;
+  }
+  
+  .current-temp {
+    font-stretch:ultra-condensed;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "temp feels-like";
+    grid-area: current-temp;
+
+  }
+  
+  sup{
+    font-size: 5vh;
+  }
+  .temp { 
+    font-size: 15vh;
+    margin: auto;
+    grid-area: temp; }
+  
+  .feels-like { 
+    font-size: 2.5vh;
+    margin: auto;
+    grid-area: feels-like; }
+  
+  .icon { 
+    margin: auto;
+    grid-area: icon; }
+  
+  .info {
+    font-size: 2.5vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "weather weather-desc";
+    grid-area: info;
+  }
+  
+  .weather { grid-area: weather; }
+  
+  .weather-desc { grid-area: weather-desc; }
+  
+
+}
