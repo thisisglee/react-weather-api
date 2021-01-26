@@ -2,13 +2,13 @@
 
 This is the project made from Openweather API, which populates the recipe cards. App can search query and filter the recipes.
 
-###<ul> Features
+<ul>###Features
   <li>Feels like temp</li>
   <li>Max/Min</li>
   <li>Humidity/Wind</li>
 </ul>
 
-###<ul> Technologies Used
+<ul>###Technologies Used
   <li>React</li>
   <li>SASS/SCSS</li>
   <li>Axios</li>
