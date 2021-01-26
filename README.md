@@ -8,8 +8,7 @@ This is the project made from Openweather API, which populates the recipe cards.
   <li>Humidity/Wind</li>
 </ul>
 
-<ul>
-  # Technologies Used
+<ul>Technologies Used
   <li>React</li>
   <li>SASS/SCSS</li>
   <li>Axios</li>
