@@ -6,11 +6,13 @@ This is the project made from Openweather API, which populates the recipe cards.
   <li>Feels like temp</li>
   <li>Max/Min</li>
   <li>Humidity/Wind</li>
+</ul>
 
 <ul> Technologies Used
   <li>React</li>
   <li>SASS/SCSS</li>
   <li>Axios</li>
+</ul>
 
 ## Usage
 
